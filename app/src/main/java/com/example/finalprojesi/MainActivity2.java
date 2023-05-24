@@ -60,7 +60,6 @@ public class MainActivity2 extends AppCompatActivity {
         chatRecycler.setAdapter(adaptor);
         chatRecycler.setLayoutManager(new LinearLayoutManager(this));
 
-
         btnsend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -104,7 +103,6 @@ public class MainActivity2 extends AppCompatActivity {
 
                             }
                             else{
-
                                 List<DocumentSnapshot> mesajlar = value.getDocuments();
                                 chats.clear(); //mesajlari tekrar tekrar yazmasin diye siliyoruz
                                 for (DocumentSnapshot document : mesajlar) {
@@ -120,7 +118,6 @@ public class MainActivity2 extends AppCompatActivity {
                         }
                     }
                 });
-
 
     }
 }
