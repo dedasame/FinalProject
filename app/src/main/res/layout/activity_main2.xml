@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="#90CCF8"
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mylayout"
+        android:layout_alignStart="@+id/mylayout"
+        android:layout_alignParentTop="true"
+
+        />
+
+
+
+    <LinearLayout
+        android:id="@+id/mylayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="30dp">
+
+        <EditText
+            android:id="@+id/txtmessage"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:hint="Mesajınızı Buraya Yazın"
+            />
+
+        <Button
+            android:id="@+id/btnsend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GÖNDER"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
